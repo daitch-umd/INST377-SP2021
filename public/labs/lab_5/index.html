@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
@@ -14,9 +14,9 @@
     <div class="container is-max-desktop">
         <section class="hero is-primary">
             <div class="hero-body">
-              <p class="title">
+              <h1 class="title">
                 Cole Daitch's Lab 5
-              </p>
+              </h1>
               <p class="subtitle">
                 Zip Code Food Search
               </p>
@@ -28,7 +28,9 @@
           <form class="field">
               <label class="label"></label>
               <div class="control">
-                <input class="input" type="text" placeholder="Search by restaurant name, city, or category...">
+                <label for="searchBar">Search</label>
+                <input name="searchBar" id="searchBar" class="input" type="text" placeholder="Search by zipcode">
+                <button type="submit" label="Submit">Submit</button>
               </div>
           </form>
 
@@ -36,7 +38,7 @@
             <ul class="suggestions">
                 <!-- List items appear here -->
             </ul>
-            </div>
+          </div>
         </div>
 
         <div class="column">
