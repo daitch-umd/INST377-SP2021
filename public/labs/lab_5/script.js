@@ -78,8 +78,8 @@ async function dataHandler(mapObjectFromFunction) {
   //searchInput.addEventListener('keyup', (evt) => { displayMatches(evt) });
   
   searchInput.addEventListener('submit', async (myEvent) => { 
-    //displayMatches(myEvent);
-    
+    displayMatches(myEvent);
+    /*
     myEvent.preventDefault();
     const filtered = findMatches(myEvent.target.value, restaurants).filter((record) => record.geocoded_column_1);
 
@@ -92,7 +92,7 @@ async function dataHandler(mapObjectFromFunction) {
       appendItem.innerHTML = `<div class="list-header is-size-5">${item.name}</div><address class="is-size-6">${item.address_line_1}</address>`;
       suggestions.append(appendItem);
     });
-    
+    */
   });
   
 }
